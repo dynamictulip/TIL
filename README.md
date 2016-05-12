@@ -6,7 +6,8 @@ Inspired by the likes of https://github.com/jbranchaud/til
 
 ###Categories
 - COM Interop
-
+- Visual Studio Shortcuts
+ 
 ---
 
 ###COM Interop
@@ -32,3 +33,8 @@ You'll also need to tell the interface which COM interface it should inherit fro
         string GetGreeting();
     }
 ```
+
+###Visual Studio Shortcuts
+- Ctrl+D -> Duplicate line
+- Ctrl+K Ctrl+D -> Format document
+- Alt+Up, Alt+Down -> Move line up/down
