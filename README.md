@@ -5,8 +5,8 @@ Inspired by the likes of https://github.com/jbranchaud/til
 ---
 
 ###Categories
-- COM Interop
-- Visual Studio Shortcuts
+* [COM Interop](#com-interop)
+* [Visual Studio Shortcuts](#visual-studio-shortcuts)
  
 ---
 
