@@ -38,3 +38,4 @@ You'll also need to tell the interface which COM interface it should inherit fro
 - Ctrl+D -> Duplicate line
 - Ctrl+K Ctrl+D -> Format document
 - Alt+Up, Alt+Down -> Move line up/down
+- Alt+Shift -> Block select
