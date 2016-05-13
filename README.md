@@ -37,5 +37,7 @@ You'll also need to tell the interface which COM interface it should inherit fro
 ###Visual Studio Shortcuts
 - Ctrl+D -> Duplicate line
 - Ctrl+K Ctrl+D -> Format document
-- Alt+Up, Alt+Down -> Move line up/down
+- Ctrl+R r -> Rename method
+- Alt+Up/Alt+Down -> Move line up/down
 - Alt+Shift -> Block select
+- Shift+F10 -> Right click
