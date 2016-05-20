@@ -60,7 +60,7 @@ Here are the entire contents of the log4net configuration file.
 ```XML
 <log4net>
     <appender name="RollingFile" type="log4net.Appender.RollingFileAppender">
-        <file value="C:\Logs\UKHO.TTBes.log" />
+        <file value="C:\Logs\sara.log" />
         <appendToFile value="true" />
         <maximumFileSize value="100KB" />
         <maxSizeRollBackups value="2" />
