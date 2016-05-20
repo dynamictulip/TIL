@@ -78,9 +78,10 @@ Here are the entire contents of the log4net configuration file.
 ```
 
 ###Visual Studio Shortcuts
+- Alt+Shift -> Block select
+- Alt+Up/Alt+Down -> Move line up/down
+- Ctrl+Tab -> Switch tabs
 - Ctrl+D -> Duplicate line
 - Ctrl+K Ctrl+D -> Format document
 - Ctrl+R r -> Rename method
-- Alt+Up/Alt+Down -> Move line up/down
-- Alt+Shift -> Block select
 - Shift+F10 -> Right click
