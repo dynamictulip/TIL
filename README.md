@@ -6,6 +6,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 
 ###Categories
 * [COM Interop](#com-interop)
+* [Git](#git)
 * [Log4net](#log4net)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
  
@@ -33,6 +34,24 @@ You'll also need to tell the interface which COM interface it should inherit fro
     {
         string GetGreeting();
     }
+```
+
+###Git
+To merge one repository into another and retain history is quite simple:
+ 1. Go to the branch of the repository you're keeping
+ 2. Add the repository that you want to bring in as a remote
+ 3. Pull from the repository that you're bringing in
+ 4. Resolve any conflicts
+ 5. Remove the remote
+ 6. Commit
+ 7. Done!
+
+```Shell
+cd path/to/project-b
+git remote add project-a path/to/project-a
+git fetch project-a
+git merge project-a/master # or whichever branch you want to merge
+git remote remove project-a
 ```
 
 ###Log4net
