@@ -9,6 +9,8 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Git](#git)
 * [Log4net](#log4net)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
+* [Visual Studio Team Services](#visual-studio-team-services)
+* [Xamarin](#xamarin)
  
 ---
 
@@ -104,3 +106,6 @@ Here are the entire contents of the log4net configuration file.
 - Ctrl+K Ctrl+D -> Format document
 - Ctrl+R r -> Rename method
 - Shift+F10 -> Right click
+
+###Visual Studio Team Services
+Build versioning - [Colin's AlM Corner Build & Release Tools](https://marketplace.visualstudio.com/items?itemName=colinsalmcorner.colinsalmcorner-buildtasks) - this is an extension to VSTS that allows automatic custom versioning by the build process.
