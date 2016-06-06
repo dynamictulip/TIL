@@ -39,6 +39,7 @@ You'll also need to tell the interface which COM interface it should inherit fro
 ```
 
 ###Git
+#####Merging Repositories and keeping history
 To merge one repository into another and retain history is quite simple:
  1. Go to the branch of the repository you're keeping
  2. Add the repository that you want to bring in as a remote
@@ -55,6 +56,18 @@ git fetch project-a
 git merge project-a/master # or whichever branch you want to merge
 git remote remove project-a
 ```
+
+#####Undoing changes to a subset of files in a commit when Origin has been pushed
+ 1. Soft reset to the commit prior to the mistake commit that you are undoing
+ 2. Unstage the changes that you don't want to commit
+ 3. Commit the modified staging locally
+ 4. Create a local branch at this point (I called mine holdit)
+ 5. Hard reset the master local branch back to the mistake commit
+ 6. Reverse the mistake commit locally
+ 7. Merge back in the holdit branch 
+ 8. Delete the holdit branch
+ 9. Recommit to origin
+
 
 ###Log4net
 To setup log4net you need a logger and a configuration file. This example shows setting up a logger in a dll (not something you'd usually do, set it up in the exe and pass around the reference if you can) which is why the additional "find the configuration file it's by the dll" code is necessary.
