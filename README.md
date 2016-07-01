@@ -10,6 +10,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Log4net](#log4net)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
+* [WiX](#wix)
 * [Xamarin](#xamarin)
  
 ---
@@ -160,4 +161,18 @@ Here are the entire contents of the log4net configuration file.
 ###Visual Studio Team Services
 Build versioning - [Colin's AlM Corner Build & Release Tools](https://marketplace.visualstudio.com/items?itemName=colinsalmcorner.colinsalmcorner-buildtasks) - this is an extension to VSTS that allows automatic custom versioning by the build process.
 
+###WiX
+#####Setting Registry edit permissions
+This needs to be done at every level that the special permission is required. Although User="Everyone" is in english, WiX maps it to the corresponding SID which means that the permissions will be set correctly on non-English computers
+```xml
+<RegistryKey Root="HKLM" Key="Software\SaraSoft" ForceCreateOnInstall="yes">
+  <Permission GenericAll="yes" User="Everyone"/>
+  <RegistryKey Key="Properties" ForceCreateOnInstall="yes">
+    <Permission GenericAll="yes" User="Everyone"/>
+    <RegistryValue Name="Update server" Value="sara.com/updates" Type="string" />
+    <RegistryValue Name="Licence key" Value="" Type="string" />
+    <RegistryValue Name="Language" Value="Klingon" Type="string" />
+  </RegistryKey>
+</RegistryKey>
+```
 ###Xamarin
