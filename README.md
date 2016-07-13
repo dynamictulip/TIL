@@ -8,6 +8,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [COM Interop / Platform Invoke](#com-interop--platform-invoke)
 * [Git](#git)
 * [Log4net](#log4net)
+* [Markdown](#markdown)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
 * [WiX](#wix)
@@ -148,6 +149,127 @@ Here are the entire contents of the log4net configuration file.
     </root>
 </log4net>
 ```
+
+###Markdown
+####Headings
+Add dashes under a line to get
+
+    Page headings
+    ---
+
+Add hashes before a line to get
+
+\#\#\#Section Headings
+
+####Formatting
+**\*\*Bold\*\***  or  __\_\_Bold\_\___
+
+*\*Italics\**  or  _\_Italics\__
+
+```
+* Bullet 1
+* Bullet 2
+    * Sub-bullet 1
+    * Sub-bullet 2
+```
+
+* Bullet 1
+* Bullet 2
+    * Sub-bullet 1
+    * Sub-bullet 2
+
+```
+1. This is a numbered point
+    * Bullet within a point
+    * Another bullet
+2. And here is another one
+3. Three numbered points?
+```
+
+1. This is a numbered point
+    * Bullet within a point
+    * Another bullet
+2. And here is another one
+3. Three numbered points?
+
+####Links
+`[Display text for link](http://www.google.co.uk)` gives [Display text for link](http://www.google.co.uk)
+
+To create a link without changing the display text just surround it in angular braces - `<http://www.google.co.uk>` gives <http://www.google.co.uk>. **Beware**: You need to include the http for this method to work
+
+
+####Codeblocks
+```
+    Codeblocks can be created by indenting text with 4 spaces
+```
+`````
+\```
+Or by using backticks above and below
+\```
+`````
+Inline `code` can be made by using single `` `backticks` `` 
+
+####Tables
+Tables are created by using pipes and dashes.
+
+```
+Heading 1    | Heading 2    | Heading 3
+------------ | ------------ | ------------
+Row 1 Cell 1 | Row 1 Cell 2 | Row 1 Cell 3
+Row 2 Cell 1 | Row 2 Cell 2 | Row 2 Cell 3
+Row 3 Cell 1 | Row 3 Cell 2 | Row 3 Cell 3
+Row 4 Cell 1 | Row 4 Cell 2 | Row 4 Cell 3
+```
+
+Heading 1    | Heading 2    | Heading 3
+------------ | ------------ | ------------
+Row 1 Cell 1 | Row 1 Cell 2 | Row 1 Cell 3
+Row 2 Cell 1 | Row 2 Cell 2 | Row 2 Cell 3
+Row 3 Cell 1 | Row 3 Cell 2 | Row 3 Cell 3
+Row 4 Cell 1 | Row 4 Cell 2 | Row 4 Cell 3
+
+By default cells are left aligned. You can use colons to change the alignment
+```
+Animal    | Number of legs   | Hairy? | Name of young 
+----------|:-----------------|-------:|:------------: 
+Dog       | Four             | Yes    | Puppy         
+Kangaroo  | Two              | Yes    | Joey          
+Centipede | 30 - 354         | No     | Unknown       
+```
+
+Animal    | Number of legs   | Hairy? | Name of young 
+----------|:-----------------|-------:|:------------: 
+Dog       | Four             | Yes    | Puppy         
+Kangaroo  | Two              | Yes    | Joey          
+Centipede | 30 - 354         | No     | Unknown       
+
+If you don't want headings on the table then you can leave them blank. **Beware**: If you leave the headers blank then you will either have to put extra pipes in to denote the edges of the able or you will need to ensure that there are fewer than four spaces to the first pipe otherwise the compiler will create a code block
+```
+|          |                  |
+|--------- | ---------------- |
+|Thing 1   | Hat              |
+|Thing 2   | Ball             |
+|Thing 3   | Jacket           |
+
+or
+
+   |   
+--------- | ---------------- 
+Thing 1   | Hat              
+Thing 2   | Ball             
+Thing 3   | Jacket           
+
+```
+
+|          |                  |
+|--------- | ---------------- |
+|Thing 1   | Hat              |
+|Thing 2   | Ball             |
+|Thing 3   | Jacket           |
+
+####Images
+Image paths are relative to the file location `![alternative text](img/somepicture.png)`
+
 
 ###Visual Studio Shortcuts
 - Alt+Shift -> Block select
