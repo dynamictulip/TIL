@@ -9,6 +9,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Git](#git)
 * [Log4net](#log4net)
 * [Markdown](#markdown)
+* [SpecFlow](#specflow)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
 * [WiX](#wix)
@@ -270,15 +271,21 @@ Thing 3   | Jacket
 ####Images
 Image paths are relative to the file location `![alternative text](img/somepicture.png)`
 
+###SpecFlow
+
 
 ###Visual Studio Shortcuts
 - Alt+Shift -> Block select
 - Alt+Up/Alt+Down -> Move line up/down
+- Ctrl+- -> Navigate backward
 - Ctrl+Tab -> Switch tabs
 - Ctrl+D -> Duplicate line
+- Ctrl+E Ctrl+C -> Resharper code formatting
 - Ctrl+K Ctrl+D -> Format document
 - Ctrl+R r -> Rename method
 - Shift+F10 -> Right click
+- Shift+F12 -> Resharper find usages
+- Shift+Ctrl+Alt+S -> SpecFlow find step usage
 
 ###Visual Studio Team Services
 Build versioning - [Colin's AlM Corner Build & Release Tools](https://marketplace.visualstudio.com/items?itemName=colinsalmcorner.colinsalmcorner-buildtasks) - this is an extension to VSTS that allows automatic custom versioning by the build process.
