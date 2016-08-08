@@ -7,6 +7,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 ###Categories
 * [COM Interop / Platform Invoke](#com-interop--platform-invoke)
 * [Git](#git)
+* [Git-TFS] (#git-tfs)
 * [Log4net](#log4net)
 * [Markdown](#markdown)
 * [SpecFlow](#specflow)
@@ -107,6 +108,14 @@ git remote remove project-a
  7. Merge back in the holdit branch 
  8. Delete the holdit branch
  9. Recommit to origin
+
+
+###Git-TFS
+This is a tool that will transform a TFS repository into a Git repository
+* `c:\GittedTfs>git tfs clone https://mytfslocation.com "$/Git-TFS tester/First group of things/WindowsFormsApplication1" --branches=all` creates a Git repository from the given project and all of its branches. History is retained. **NOTE** TFS puts branches in different folders
+* `c:\GittedTfs>git tfs list-remote-branches https://mytfslocation.com` lists all of the branches in a repository. The trunks/masters have an asterix next to them. Clone one of these to get both the trunk and all of it's branches.
+
+You can't ignore a branch - do the whole thing and then delete the branch on your local repository.
 
 
 ###Log4net
