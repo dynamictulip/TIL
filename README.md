@@ -294,6 +294,7 @@ Image paths are relative to the file location `![alternative text](img/somepictu
 - Ctrl+R r -> Rename method
 - Shift+F10 -> Right click
 - Shift+F12 -> Resharper find usages
+- Shift+Alt+L -> Scroll to active file in Solution Explorer
 - Shift+Ctrl+Alt+S -> SpecFlow find step usage
 
 ###Visual Studio Team Services
