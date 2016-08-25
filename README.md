@@ -6,6 +6,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 
 ###Categories
 * [COM Interop / Platform Invoke](#com-interop--platform-invoke)
+* [Dotfuscator](#dotfuscator)
 * [Git](#git)
 * [Git-TFS] (#git-tfs)
 * [Log4net](#log4net)
@@ -78,6 +79,18 @@ DllGetClassObject returns a Class Factory which can be used to create the object
             return objectForIUnknown as T;
         }
 ```
+
+###Dotfuscator
+Features:
+* Control Flow
+* Linking - Merging multiple assemblies into one
+* Pruning - Removing code deemed "unused"
+* Renaming - Changing the names of methods and objects
+* String encryption - Specify certain files to encrypt strings in to stop hackers locating critical code by the inline strings
+* Maps - stores a map of what the names were vs what they are now - this can be used to ensure consistent renaming or to allow public methods to be used between assemblies
+* Watermarking
+
+Config file can just contain fragments or config and be used with the command line - it doesn't have to contain all of the configuration
 
 ###Git
 #####Merging Repositories and keeping history
