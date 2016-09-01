@@ -15,7 +15,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
 * [WiX](#wix)
-* [Xamarin](#xamarin)
+* [Xamarin](Xamarin.md)
  
 ---
 
@@ -327,4 +327,3 @@ This needs to be done at every level that the special permission is required. Al
   </RegistryKey>
 </RegistryKey>
 ```
-###Xamarin
