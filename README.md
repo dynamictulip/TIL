@@ -122,6 +122,13 @@ git remote remove project-a
  8. Delete the holdit branch
  9. Recommit to origin
 
+#####I want to change branches but I don't want to commit my changes to this branch!
+[Git stash](https://git-scm.com/docs/git-stash) is a wonderful thing. It allows you to make something similar to a temporary commit which you can then *pop* when you're on the branch you want to commit on
+```Shell
+git stash
+git checkout other-branch
+git stash pop
+```
 
 ###Git-TFS
 This is a tool that will transform a TFS repository into a Git repository
