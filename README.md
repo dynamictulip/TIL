@@ -301,6 +301,22 @@ Thing 3   | Jacket
 Image paths are relative to the file location `![alternative text](img/somepicture.png)`
 
 ###SpecFlow
+In a feature file you can add tables to your steps - this allows you to easily specify multiple values and to logically group parameters
+
+```
+Scenario: Do not show messages in the unicorn category on the main page
+  Given that I have a database containing the following messages
+    | Id | Category    | Text                            |
+    | 1  | Rainbows    | Rainbows have many colours      |
+    | 2  | Unicorn     | Unicorns are secretly evil      |
+    | 3  | Butterflies | Butterflies can fly to the moon |
+  When I open the application
+  Then The main page should display the following messages
+    | Message                         |
+    | Rainbows have many colours      |
+    | Butterflies can fly to the moon |
+```
+The table is automatically reformated whenever you add a pipe so if it becomes misaligned you can just remove and readd a pipe to easily fix it
 
 
 ###Visual Studio Shortcuts
