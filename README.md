@@ -328,6 +328,8 @@ The table is automatically reformated whenever you add a pipe so if it becomes m
 - Ctrl+E Ctrl+C -> Resharper code formatting
 - Ctrl+K Ctrl+D -> Format document
 - Ctrl+R r -> Rename method
+- Ctrl+Alt+P -> Attach to process
+- Ctrl+F12 -> Go to implementation
 - Shift+F10 -> Right click
 - Shift+F12 -> Resharper find usages
 - Shift+Alt+L -> Scroll to active file in Solution Explorer
