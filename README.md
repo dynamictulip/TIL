@@ -11,6 +11,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Git-TFS] (#git-tfs)
 * [Log4net](#log4net)
 * [Markdown](#markdown)
+* [.NET Core](DotNetCore.md)
 * [SpecFlow](#specflow)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
