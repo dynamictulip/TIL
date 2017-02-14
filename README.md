@@ -5,6 +5,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 ---
 
 ###Categories
+* [Azure](#azure)
 * [COM Interop / Platform Invoke](#com-interop--platform-invoke)
 * [Dotfuscator](#dotfuscator)
 * [Git](#git)
@@ -19,6 +20,18 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Xamarin](Xamarin.md)
  
 ---
+###Azure
+##### ARM - Azure Resource Manager
+All ARM Powershell commands are of the form `[verb]-AzureRM[thing]`
+
+###### Useful Powershell commands
+* `Login-AzureRM` - Logs you into Azure
+* `Get-AzureRmWebApp -ResourceGroupName Sara -Name TestyTestTest` - Gets info on the specified web app
+* `Get-AzureRmSubscription` - Gets all of your subscriptions
+* `Select-AzureRmSubscription -SubscriptionName 'Visual Studio Enterprise'` - Sets the current subscription in the session
+
+##### ASM - Azure Services Manager
+The old way of doing things.
 
 ###COM Interop / Platform Invoke
 #####Creating COM classes with .NET
