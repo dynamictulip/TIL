@@ -13,6 +13,7 @@ Inspired by the likes of https://github.com/jbranchaud/til
 * [Log4net](#log4net)
 * [Markdown](#markdown)
 * [.NET Core](DotNetCore.md)
+* [PowerShell](#powershell)
 * [SpecFlow](#specflow)
 * [Visual Studio Shortcuts](#visual-studio-shortcuts)
 * [Visual Studio Team Services](#visual-studio-team-services)
@@ -313,6 +314,11 @@ Thing 3   | Jacket
 
 ####Images
 Image paths are relative to the file location `![alternative text](img/somepicture.png)`
+
+###PowerShell
+* `Write-Host` - Lets you write stuff to console. Useful in VSTFS
+* Join path variables - `$publishModulePath = Join-Path $env:SYSTEM_DEFAULTWORKINGDIRECTORY 'PublishProfiles\WebDeploySheep-publish.ps1'`
+* `Invoke-Command $publishModulePath -ArgumentList @{}, $filesPath, $pubProfPath`
 
 ###SpecFlow
 In a feature file you can add tables to your steps - this allows you to easily specify multiple values and to logically group parameters
