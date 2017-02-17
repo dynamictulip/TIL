@@ -319,6 +319,9 @@ Image paths are relative to the file location `![alternative text](img/somepictu
 * `Write-Host` - Lets you write stuff to console. Useful in VSTFS
 * Join path variables - `$publishModulePath = Join-Path $env:SYSTEM_DEFAULTWORKINGDIRECTORY 'PublishProfiles\WebDeploySheep-publish.ps1'`
 * `Invoke-Command $publishModulePath -ArgumentList @{}, $filesPath, $pubProfPath`
+* `Invoke-Expression` takes a string expression to execute
+* `.` just invokes stuff like a normal thing. It confuses me
+* `PS C:\> Get-Command | where {$_.OutputType}` allows you to filter like linq
 
 ###SpecFlow
 In a feature file you can add tables to your steps - this allows you to easily specify multiple values and to logically group parameters
